@@ -1,4 +1,12 @@
 {
+  "name": "gdemo",
+  "version": "1.0.0",
+  "description": "Google+ Grid Demo.",
+  "main": "./dist/index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maliMirkec/gdemo.git"
+  },
   "dependencies": {
     "starter-project": "^1.3.0"
   }
