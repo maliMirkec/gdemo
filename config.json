@@ -285,7 +285,7 @@
             "precomposedIcons": true,
             "declareOnlyDefaultIcon": true
           },
-          "appName": "Starter Project"
+          "appName": "GDemo"
         },
         "desktopBrowser": {},
         "windows": {
@@ -301,13 +301,13 @@
               "rectangle": true
             }
           },
-          "appName": "Starter Project"
+          "appName": "GDemo"
         },
         "androidChrome": {
           "pictureAspect": "noChange",
           "themeColor": "#1ebada",
           "manifest": {
-            "name": "Starter Project",
+            "name": "GDemo",
             "display": "standalone",
             "orientation": "notSet",
             "onConflict": "override",
@@ -358,7 +358,7 @@
     "dest": "docs/styleguide/",
     "clean": "docs/styleguide/",
     "kssConfig": {
-      "title": "Starter Project",
+      "title": "GDemo",
       "source": "./src/scss/",
       "destination": "./dist/docs/styleguide/",
       "css": [
@@ -376,7 +376,7 @@
     "sassdocConfig": {
       "dest": "./dist/docs/sass/",
       "package": {
-        "title": "Starter project",
+        "title": "GDemo",
         "name": "starter-project",
         "description": "A set of gulp tasks that helps you develop high performant websites using latest best practices.",
         "license": "MIT",
