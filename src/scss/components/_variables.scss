@@ -43,19 +43,6 @@ $font-size--desktop: 16px;
 /// @since 1.0.0
 $line-height: 1.5;
 
-/// Configuration for modular scale
-/// @access public
-/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
-/// @example @include css-locks(font-size, $mq--mobile, $mq--desktop, $font-size--mobile, $font-size--desktop);
-/// @group 1.1.Sizes
-/// @name modularscale
-/// @since 1.0.0
-/// @link http://www.modularscale.com/
-$modularscale: (
-  base: 1rem,
-  ratio: $major-second
-);
-
 /// Configuration for media queries
 /// @access public
 /// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
@@ -72,59 +59,143 @@ $mq-breakpoints: (
   desktop: $mq--desktop
 );
 
-/// Color from color palette
+/// Background color
 /// @access public
 /// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
-/// @example color: $color-alpha;
+/// @example background-color: $bg;
 /// @group 1.2.Colors
-/// @name color-alpha
+/// @name bg
 /// @since 1.0.0
-$color-alpha: #ba1ada;
+$bg: #eee;
 
-/// Color from color palette
+/// Selection background color
 /// @access public
 /// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
-/// @example color: $color-beta;
+/// @example background-color: $selection;
 /// @group 1.2.Colors
-/// @name color-beta
+/// @name bg
 /// @since 1.0.0
-$color-beta: #d91a79;
+$selection: #555;
 
-/// Color from color palette
-/// @access public
-/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
-/// @example color: $color-gamma;
-/// @group 1.2.Colors
-/// @name color-gamma
-/// @since 1.0.0
-$color-gamma: #1ed9d9;
-
-/// Color from color palette
-/// @access public
-/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
-/// @example color: $color-delta;
-/// @group 1.2.Colors
-/// @name color-delta
-/// @since 1.0.0
-$color-delta: #1ebada;
-
-/// Color from color palette
-/// @access public
-/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
-/// @example color: $color-epsilon;
-/// @group 1.2.Colors
-/// @name color-epsilon
-/// @since 1.0.0
-$color-epsilon: #ffe;
-
-/// Color for text
+/// Text color
 /// @access public
 /// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
 /// @example color: $color-text;
 /// @group 1.2.Colors
 /// @name color-text
 /// @since 1.0.0
-$color-text: #383738;
+$color-text: #fff;
+
+/// Hero background color
+/// @access public
+/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
+/// @example background-color: $color-hero;
+/// @group 1.2.Colors
+/// @name color-hero
+/// @since 1.0.0
+$color-hero: #fff;
+
+/// Hero title color
+/// @access public
+/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
+/// @example color: $color-hero-title;
+/// @group 1.2.Colors
+/// @name color-hero-title
+/// @since 1.0.0
+$color-hero-title: #2d2d2d;
+
+/// Hero text color
+/// @access public
+/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
+/// @example color: $color-hero-text;
+/// @group 1.2.Colors
+/// @name color-hero-text
+/// @since 1.0.0
+$color-hero-text: #7d7d7d;
+
+/// Dot default color
+/// @access public
+/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
+/// @example background-color: $color-dot;
+/// @group 1.2.Colors
+/// @name color-dot
+/// @since 1.0.0
+$color-dot: #c7c7c7;
+
+/// Dot active color
+/// @access public
+/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
+/// @example background-color: $color-dot-active;
+/// @group 1.2.Colors
+/// @name color-dot-active
+/// @since 1.0.0
+$color-dot-active: #ffc228;
+
+/// Sidebar background color
+/// @access public
+/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
+/// @example background-color: $color-sidebar;
+/// @group 1.2.Colors
+/// @name color-sidebar
+/// @since 1.0.0
+$color-sidebar: #fff;
+
+/// Default border color
+/// @access public
+/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
+/// @example border-color: $color-border;
+/// @group 1.2.Colors
+/// @name color-border
+/// @since 1.0.0
+$color-border: #d2d2d2;
+
+/// Default button background color
+/// @access public
+/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
+/// @example background-color: $color-button;
+/// @group 1.2.Colors
+/// @name color-button
+/// @since 1.0.0
+$color-button: #4c8ffb;
+
+/// Default button border color
+/// @access public
+/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
+/// @example border-color: $color-button-border;
+/// @group 1.2.Colors
+/// @name color-button-border
+/// @since 1.0.0
+$color-button-border: #3079ed;
+
+/// Color palette
+/// @access public
+/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
+/// @example background-color: $color-1-1;
+/// @group 1.2.Colors
+/// @name color-1-1
+/// @since 1.0.0
+$palette: (
+  color-1-1: #abcbd6,
+  color-1-2: #8cbecf,
+  color-2-1: #7bc1a1,
+  color-2-2: #5eb990,
+  color-3-1: #101e55,
+  color-3-2: #0b163f,
+  color-4-1: #fbbf28,
+  color-4-2: #f2b51c,
+  color-5-1: #2a70e8,
+  color-5-2: #0957db,
+  color-6-1: #2b2423,
+  color-6-2: #151111,
+  color-7-1: #ce483d,
+  color-7-2: #bd4036,
+  color-8-1: #8eb021,
+  color-8-2: #7e9d1c,
+  color-9-1: #79302a,
+  color-9-2: #662621,
+  color-10-1: #ffd006,
+  color-10-2: #ebc009
+);
 
 /// Transition duration
 /// @access public
@@ -161,3 +232,21 @@ $font-alpha: 'Lato';
 /// @name font-alpha-subset
 /// @since 1.0.0
 $font-alpha-subset: 'LatoSubset';
+
+/// Default box shadow
+/// @access public
+/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
+/// @example box-shadow: $box-shadow;
+/// @group 1.5.Other
+/// @name box-shadow
+/// @since 1.0.0
+$box-shadow: 0 1px 5px -4px rgba(0,0,0,.5);
+
+/// Default border radius
+/// @access public
+/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
+/// @example border-radius: $border-radius;
+/// @group 1.5.Other
+/// @name border-radius
+/// @since 1.0.0
+$border-radius: 4px;

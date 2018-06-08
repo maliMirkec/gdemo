@@ -54,37 +54,22 @@ html {
 //
 // Styleguide: Typography.Paragraphs
 body {
-  font-size: ms(0);
+  font-size: 10px;
   line-height: $line-height;
 }
 
-// Headings
+// Selection
 //
-// Headings are usually used as titles.
+// Selection is visible when selecting a text.
 //
 // Markup:
-// <h1>This is a heading h1</h1>
-// <h2>This is a heading h2</h2>
-// <h3>This is a heading h3</h3>
-// <h4>This is a heading h4</h4>
-// <h5>This is a heading h5</h5>
-// <h6>This is a heading h6</h6>
+// <p>This is a paragraph.</p>
 //
 // Weight: 101
 //
-// Styleguide: Typography.Headings
-@for $i from 1 through 6 {
-  h#{$i} {
-    font-size: ms(7 - $i);
-  }
-}
-
-strong,
-em {
-  font-weight: 400;
-}
-
+// Styleguide: Typography.Selection
 ::selection {
-  background-color: lighten($color-beta, 44%);
+  background-color: $selection;
+  color: $color-text;
 }
 

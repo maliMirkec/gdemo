@@ -20,7 +20,7 @@ gulp.task('html:dev', () => gulp.src(`${global.config.root + global.config.html.
   .pipe(pug(global.config.html.pugConfig))
   .pipe(htmllint(global.config.root + global.config.html.htmllintConfig))
   .pipe(inlineSource({
-    rootpath: path.resolve(global.config.root + global.config.html.inlineSourcePath),
+    rootpath: path.resolve(global.config.root + global.config.dest + global.config.html.inlineSourcePath),
     ignore: ['css', 'script']
   }))
   .pipe(rename(global.config.html.renameConfig))

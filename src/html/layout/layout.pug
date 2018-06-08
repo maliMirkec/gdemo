@@ -2,14 +2,6 @@ doctype
 html(lang="en")
   include /partials/head.pug
   body
-    include /partials/header.pug
-    include /partials/banner.pug
-    main.main
-      include /partials/sidebar.pug
-      .content
-        block content
-    include /partials/footer.pug
+    block content
     include /assets/deferred-styles.pug
-    include /assets/foft-font-loading.pug
     include /assets/scripts.pug
-
