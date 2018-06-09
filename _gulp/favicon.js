@@ -10,8 +10,10 @@ const runSequence = require('run-sequence')
 gulp.task('favicon:generate', done =>
   realFavicon.generateFavicon(global.config.favicon.realFaviconConfig, () => done()))
 
-const parsedFaviconFile = fs.readFileSync(global.config.favicon.realFaviconConfig.markupFile)
-const parsedFaviconData = JSON.parse(parsedFaviconFile)
+if (global.config.gfx.run) {
+  const parsedFaviconFile = fs.readFileSync(global.config.favicon.realFaviconConfig.markupFile)
+  const parsedFaviconData = JSON.parse(parsedFaviconFile)
+}
 
 // Inject the favicon markups in your HTML pages. You should run
 // this task whenever you modify a page. You can keep this task

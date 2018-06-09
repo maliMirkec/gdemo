@@ -266,7 +266,7 @@
     "clean": "fonts/"
   },
   "favicon": {
-    "run": true,
+    "run": false,
     "src": "src/html/partials/favicon.pug",
     "dest": "html/partials",
     "clean": "favicon/",
