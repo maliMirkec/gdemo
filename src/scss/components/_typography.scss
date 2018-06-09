@@ -39,10 +39,6 @@
 //
 // Styleguide: Typography
 
-html {
-  @include css-locks(font-size, $mq--mobile, $mq--desktop, $font-size--mobile, $font-size--desktop);
-}
-
 // Paragraphs
 //
 // Paragraphs are usualy used as body text.

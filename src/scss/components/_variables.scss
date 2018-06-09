@@ -14,7 +14,7 @@ $mq--mobile: 480px;
 /// @group 1.1.Sizes
 /// @name mq--desktop
 /// @since 1.0.0
-$mq--desktop: 960px;
+$mq--desktop: 980px;
 
 /// Default font size on mobile devices, used in css-locks.
 /// @access public
@@ -250,3 +250,12 @@ $box-shadow: 0 1px 5px -4px rgba(0,0,0,.5);
 /// @name border-radius
 /// @since 1.0.0
 $border-radius: 4px;
+
+/// Second border radius
+/// @access public
+/// @author Silvestar Bistrović <me@silvestarbistrovic.from.hr>
+/// @example border-radius: $border-radius-beta;
+/// @group 1.5.Other
+/// @name border-radius-beta
+/// @since 1.0.0
+$border-radius-beta: 6px;

@@ -6,7 +6,7 @@ body {
     max-width: 100%;
   }
 
-  @media (min-width: 980px) {
+  @include mq($from: desktop) {
     min-height: 100vh;
     background-color: $color-sidebar;
     background-image: linear-gradient(to right, transparent 90px, $bg 90px), linear-gradient(to right, transparent 89px, $color-border 89px);
@@ -19,13 +19,13 @@ body {
   grid-gap: 20px;
   padding: 20px;
 
-  @media (min-width: 480px) {
+  @include mq($from: mobile) {
     grid-template-areas: "a a"
       "b c"
       "d e";
   }
 
-  @media (min-width: 980px) {
+  @include mq($from: desktop) {
     padding-left: 0;
     grid-template-areas: "f a a b c"
       "f d e b c";
@@ -45,7 +45,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 980px) {
+  @include mq($from: desktop) {
     position: static;
     right: initial;
     grid-area: f;
@@ -64,7 +64,7 @@ body {
   border-radius: $border-radius;
   position: relative;
 
-  @media (min-width: 480px) {
+  @include mq($from: mobile) {
     grid-area: a;
   }
 }
@@ -132,35 +132,30 @@ body {
   background-color: $color-dot-active;
 }
 
-.content {
-  display: grid;
-  grid-gap: 20px;
-}
-
 .content--alpha {
-  @media (min-width: 480px) {
+  @include mq($from: mobile) {
     grid-area: b;
   }
 
-  @media (min-width: 980px) {
+  @include mq($from: desktop) {
     grid-area: b;
   }
 }
 
 .content--beta {
-  @media (min-width: 480px) {
+  @include mq($from: mobile) {
     grid-area: c;
   }
 }
 
 .content--gamma {
-  @media (min-width: 480px) {
+  @include mq($from: mobile) {
     grid-area: d;
   }
 }
 
 .content--delta {
-  @media (min-width: 480px) {
+  @include mq($from: mobile) {
     grid-area: e;
   }
 }
@@ -174,6 +169,10 @@ body {
   flex-direction: column;
   overflow: hidden;
 
+  & + & {
+    margin-top: 20px;
+  }
+
   @for $i from 1 through 10 {
     &--#{$i} {
       background-color: map-get($palette, "color-#{$i}-1");
@@ -186,7 +185,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 55px;
+  padding: 1;
+  border-radius: $border-radius-beta;
 }
 
 .content__info {
